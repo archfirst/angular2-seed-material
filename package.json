@@ -32,7 +32,9 @@
     "webdriver-start": "webdriver-manager start",
     "webdriver-update": "webdriver-manager update"
   },
-  "contributors": ["Naresh Bhatia <nareshbhatia>"],
+  "contributors": [
+    "Naresh Bhatia <nareshbhatia>"
+  ],
   "license": "MIT",
   "devDependencies": {
     "angular2-service-worker": "^0.1.1",
@@ -110,6 +112,9 @@
     "yargs": "^4.2.0"
   },
   "dependencies": {
+    "@angular2-material/button": "^2.0.0-alpha.3",
+    "@angular2-material/core": "^2.0.0-alpha.3",
+    "@angular2-material/input": "^2.0.0-alpha.3",
     "angular2": "2.0.0-beta.17",
     "es6-module-loader": "^0.17.8",
     "es6-promise": "^3.1.2",

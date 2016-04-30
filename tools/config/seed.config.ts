@@ -76,7 +76,6 @@ export class SeedConfig {
   // SystemsJS Configuration.
   protected SYSTEM_CONFIG_DEV = {
     defaultJSExtensions: true,
-    packageConfigPaths: [`${this.APP_BASE}node_modules/*/package.json`],
     paths: {
       [this.BOOTSTRAP_MODULE]: `${this.APP_BASE}${this.BOOTSTRAP_MODULE}`,
       'angular2/*': `${this.APP_BASE}angular2/*`,
@@ -86,7 +85,22 @@ export class SeedConfig {
     },
     packages: {
       angular2: { defaultExtension: false },
-      rxjs: { defaultExtension: false }
+      rxjs: { defaultExtension: false },
+      '@angular2-material/core': {
+        format: 'cjs',
+        defaultExtension: 'js',
+        main: 'core.js'
+      },
+      '@angular2-material/input': {
+        format: 'cjs',
+        defaultExtension: 'js',
+        main: 'input.js'
+      },
+      '@angular2-material/button': {
+        format: 'cjs',
+        defaultExtension: 'js',
+        main: 'button.js'
+      }
     }
   };
 
